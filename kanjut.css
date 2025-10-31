@@ -1,0 +1,61 @@
+body {
+  background-image: url('4c2f410923e8eb47454fb5ee004e7910.jpg');
+  background-size: cover;        
+  background-repeat: no-repeat;  
+  background-position: center top;  
+  background-attachment: scroll;  
+  min-height: 100vh
+}
+.social-section {
+  text-align: center;
+}
+
+.social-section .social-link,
+.social-section .donasi-btn {
+  display: block;            /* Biar lebarnya bisa penuh */
+  width: 80%;                /* Lebar menyesuaikan tombol Contact Me With */
+  max-width: 225px;          /* Biar gak terlalu lebar di layar besar */
+  margin: 10px auto;         /* Tengah secara horizontal */
+  background-color: #DDA1E5;
+  color: black;
+  padding: 10px 0;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: none;
+  border: 2px solid #B871B8; /* Opsional: border ungu biar seragam */
+}
+
+.social-section .donasi-btn {
+  color: black;              /* Tetap putih untuk tombol donasi */
+  background-color: #DDA1E5; 
+}
+.karakter {
+  display: block;
+  margin: 0 auto;              /* Tengah secara horizontal */
+  width: 250px;                /* Ubah sesuai ukuran yang kamu mau */
+  position: relative;          /* Bisa digeser pakai top/bottom nanti */
+  z-index: 10;                 /* Biar di atas background */
+  pointer-events: none;/* Supaya nggak ganggu klik tombol di atasnya */
+  box-shadow: 0 0 10px rgba(0,0,0,0,3);
+}
+
+.profile-container {
+  margin-top: 30px;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;      /* Membuat bentuk lingkaran */
+  border: 3px solid white; /* Bingkai putih agar terlihat menonjol */
+  object-fit: cover;       /* Agar foto tidak gepeng */
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+  display: block;
+  margin: 40px auto 10px
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
